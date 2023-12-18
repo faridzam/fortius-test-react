@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import Login from "./app/auth/Login";
+import EmployeePage from "./app/dashboard/employee/EmployeePage";
+import RolePage from "./app/dashboard/role/RolePage";
+import Navbar from "./components/Navbar/Navbar";
+import CustomThemeProvider from "./libs/muiTheme/colorProvider";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CustomThemeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path='*' element={<Navigate to={'/login'} />} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/employee" element={<Navbar><EmployeePage /></Navbar>} />
+          <Route path="/role" element={<Navbar><RolePage /></Navbar>} />
+      </Routes>
+      </BrowserRouter>
+    </CustomThemeProvider>
   );
 }
 

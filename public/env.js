@@ -21,7 +21,7 @@ window.env = {
   "NVM_DIR": "/Users/faridzam/.nvm",
   "COMMAND_MODE": "unix2003",
   "npm_config_globalconfig": "/Users/faridzam/.nvm/versions/node/v20.10.0/etc/npmrc",
-  "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.osPKOWtfrq/Listeners",
+  "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.CzTYqER0zK/Listeners",
   "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0",
   "npm_execpath": "/Users/faridzam/.nvm/versions/node/v20.10.0/lib/node_modules/npm/bin/npm-cli.js",
   "GO_PATH": "/Users/faridzam/go",

@@ -1,4 +1,5 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NotFoundPage from "./app/404/NotFoundPage";
 import Login from "./app/auth/Login";
 import EmployeePage from "./app/dashboard/employee/EmployeePage";
 import RolePage from "./app/dashboard/role/RolePage";
@@ -11,11 +12,12 @@ function App() {
     <CustomThemeProvider>
       <BrowserRouter>
         <Routes>
-          <Route path='*' element={<Navigate to={'/login'} />} />
+          <Route path='*' element={<NotFoundPage />} />
+          <Route path="/" element={<Login/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/employee" element={<Navbar><EmployeePage /></Navbar>} />
           <Route path="/role" element={<Navbar><RolePage /></Navbar>} />
-      </Routes>
+        </Routes>
       </BrowserRouter>
     </CustomThemeProvider>
   );

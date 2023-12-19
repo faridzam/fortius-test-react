@@ -21,7 +21,7 @@ export default function EmployeeCard(params: EmployeeType){
           name    : {name}
         </RowContainer>
         <RowContainer>
-          role    : {role}
+          role    : {role.name}
         </RowContainer>
         <RowContainer>
           salary  : {salary}

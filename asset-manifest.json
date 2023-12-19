@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/static/js/main.409abacf.js",
-    "static/js/787.0b69da93.chunk.js": "/static/js/787.0b69da93.chunk.js",
-    "index.html": "/index.html",
-    "main.409abacf.js.map": "/static/js/main.409abacf.js.map",
-    "787.0b69da93.chunk.js.map": "/static/js/787.0b69da93.chunk.js.map"
+    "main.js": "/fortius-test-react/static/js/main.29bbb21f.js",
+    "static/js/787.0b69da93.chunk.js": "/fortius-test-react/static/js/787.0b69da93.chunk.js",
+    "index.html": "/fortius-test-react/index.html",
+    "main.29bbb21f.js.map": "/fortius-test-react/static/js/main.29bbb21f.js.map",
+    "787.0b69da93.chunk.js.map": "/fortius-test-react/static/js/787.0b69da93.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.409abacf.js"
+    "static/js/main.29bbb21f.js"
   ]
 }

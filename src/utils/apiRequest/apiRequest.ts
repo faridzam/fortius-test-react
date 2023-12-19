@@ -87,11 +87,14 @@ class HttpRequest {
             return axios.request(originalRequest);
           }
           return Promise.reject(error);
-        } catch (error) {
-          console.log(error)
+        } catch (catchError: any) {
+          const url = catchError.config.url;
+          if (url === `${process.env.REACT_APP_SERVER_BASE_URL}/oauth/token`) {
+            Cookies.remove('access');
+            Cookies.remove('refresh');
+            window.location.href = '/';
+          }
         }
-        
-        
       },
     );
   }

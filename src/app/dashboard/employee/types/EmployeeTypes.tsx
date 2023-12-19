@@ -1,6 +1,8 @@
+import { RoleType } from "../../role/types/RoleTypes"
+
 export type EmployeeType = {
   id?: number,
-  role: number,
+  role: RoleType,
   name: string,
   salary: number,
 }

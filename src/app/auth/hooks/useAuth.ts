@@ -7,14 +7,19 @@ export const useAuth = () => {
 
   const handleLogin = async () => {
 
-    const response = await apiRequest.post('/login', {
-      username: emailRef.current?.value,
-      password: passwordRef.current?.value,
-    })
-
-    if (response.status === 200) {
-      window.location.href = '/employee';
+    try {
+      const response = await apiRequest.post('/login', {
+        username: emailRef.current?.value,
+        password: passwordRef.current?.value,
+      })
+  
+      if (response.status === 200) {
+        window.location.href = '/employee';
+      }
+    } catch (error) {
+      //
     }
+    
   }
 
   return {

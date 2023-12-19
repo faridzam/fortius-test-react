@@ -4,6 +4,7 @@ import LoginForm from './components/LoginForm';
 import LoginImage from './components/LoginImage';
 
 export default function Login() {
+  console.log('rerender')
   return (
     <Grid container component="main" sx={{ height: '100vh' }}>
       <CssBaseline />

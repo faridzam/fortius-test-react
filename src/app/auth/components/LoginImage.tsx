@@ -15,6 +15,8 @@ export default function LoginImage(){
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
-    />
+    >
+      <img src="https://source.unsplash.com/random?wallpapers" alt="image_login" style={{objectFit: 'cover'}} />
+    </Grid>
   )
 }

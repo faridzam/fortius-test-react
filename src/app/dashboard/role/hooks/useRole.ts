@@ -39,11 +39,10 @@ export default function useRole(){
 
           break;
       }
-    } catch (error) {
-      console.log(error)
-    } finally {
       getRoles()
       handleCloseModal();
+    } catch (error) {
+      console.log(error)
     }
   }
 
@@ -58,11 +57,10 @@ export default function useRole(){
   const handleDeleteRole = async (id: number) => {
     try {
       const responseDelete = await apiRequest.delete(`/role/${id}`);
-    } catch (error) {
-      console.log(error)
-    } finally{
       getRoles()
       handleCloseConfirmation();
+    } catch (error) {
+      console.log(error)
     }
   }
 

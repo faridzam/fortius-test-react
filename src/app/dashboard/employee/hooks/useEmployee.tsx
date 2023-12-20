@@ -58,12 +58,11 @@ export default function useEmployee(){
         default:
 
           break;
-      }
-    } catch (error) {
-      console.log(error)
-    } finally {
+        }
       getEmployees()
       handleCloseModal();
+    } catch (error) {
+      console.log(error)
     }
   }
 
@@ -78,11 +77,10 @@ export default function useEmployee(){
   const handleDeleteEmployee = async (id: number) => {
     try {
       const responseDelete = await apiRequest.delete(`/employee/${id}`);
-    } catch (error) {
-      console.log(error)
-    } finally{
       getEmployees()
       handleCloseConfirmation();
+    } catch (error) {
+      console.log(error)
     }
   }
 
